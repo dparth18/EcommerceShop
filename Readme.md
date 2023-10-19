@@ -10,6 +10,10 @@ Initial Setup
 8. -> git remote add origin https://github.com/dparth18/EcommerceShop.git
 9. -> git branch -M main -> git push -u origin main
 10. Install Github Copilot and GitHub Theme Extensions on VScode
-
 11. In front end install -> npm i react-bootstrap bootstrap react-icons
 12. index.js -> import "bootstrap/dist/css/bootstrap.min.css";
+13. npm i react-router-dom
+14. We will setup our router in index.js page
+15. npm i react-router-bootstrap -> See lec 9-> used for routing <LinkContaner></LinkContaner>
+
+16. Lec 12 - Full Stack Work Flow
