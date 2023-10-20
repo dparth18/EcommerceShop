@@ -1,5 +1,7 @@
 Initial Setup
 
+Section 2
+
 1. npx create-react-app frontend
 2. cd frontend -> npm start
 3. remove .git from frontend folder -> rm -rf .git
@@ -16,4 +18,18 @@ Initial Setup
 14. We will setup our router in index.js page
 15. npm i react-router-bootstrap -> See lec 9-> used for routing <LinkContaner></LinkContaner>
 
-16. Lec 12 - Full Stack Work Flow
+Section 3
+
+16. Lec 12 - Full Stack Work Flow and Setting up backend
+17. In root terminal-> npm init -> package name: proshop-v2-> version: 1.0.0 -> Description: eCommerce application built with the MERN stack -> Entry point: server.js -> author: Parth Darekar -> License: MIT.
+18. In package.json under description -> "type:"module" -> we are using ES6 modules
+19. In package.json, replace "test": "echo \"Error: no test specified\" && exit 1" with "start": "node backend/server.js"
+20. In root terminal try command 'npm start'.
+21. In root terminal -> npm i express -> web framework we will be using on our backend to create our routes and so on..
+22. create backend folder in root and create server.js in backend folder.
+23. In root terminal -> npm i -D nodemon concurrently
+24. In package.json add -> "server": "nodemon backend/server.js" & "client":"npm start --prefix frontend"
+25. In package.json add -> "dev": "concurrently \"npm run server\" \"npm run client\"" for running client(frontend) and server(backend) concurrently.
+26. In root terminal -> npm i -D dotenv and create .env file in root folder
+27. Install Axios in the frontend (we can also use fetchAPI isntead of Axios ) -> npm i axios
+28. In frontend -> package.json add -> "proxy":"http://localhost:5000", for proxy -> 'npm run dev' in root terminal
