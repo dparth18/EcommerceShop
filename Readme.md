@@ -33,3 +33,14 @@ Section 3
 26. In root terminal -> npm i -D dotenv and create .env file in root folder
 27. Install Axios in the frontend (we can also use fetchAPI isntead of Axios ) -> npm i axios
 28. In frontend -> package.json add -> "proxy":"http://localhost:5000", for proxy -> 'npm run dev' in root terminal
+
+Section 4
+
+29. MongoDB Atlas setup
+30. MongoDB compass setup -> https://www.mongodb.com/products/tools/compass
+31. Connect with mongoose -> npm i mongoose -> Create config folder in backend -> db.js
+32. Modeling the data. Create folder 'models' in backend -> productModel.js, userModel.js
+33. Prepare sample data for seeding -> In backend data folder -> users.js. Install, 'npm i bcryptjs' for hashing user passwords.
+34. Seeding sample data.-> npm i colors -> create file in backend folder -> seeder.js and write down code.
+35. in package.json -> under scripts -> "data:import": "node backend/seeder.js" ,  
+    "data:destroy": "node backend/seeder.js -d" and run command 'npm run data:import' in root for importing data schema.
