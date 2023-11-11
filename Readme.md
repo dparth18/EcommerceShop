@@ -15,7 +15,7 @@ Section 2
 11. In front end install -> npm i react-bootstrap bootstrap react-icons
 12. index.js -> import "bootstrap/dist/css/bootstrap.min.css";
 13. npm i react-router-dom
-14. We will setup our router in index.js page
+14. We will setup our frontend react router in index.js page
 15. npm i react-router-bootstrap -> See lec 9-> used for routing <LinkContaner></LinkContaner>
 
 Section 3
@@ -42,5 +42,27 @@ Section 4
 32. Modeling the data. Create folder 'models' in backend -> productModel.js, userModel.js
 33. Prepare sample data for seeding -> In backend data folder -> users.js. Install, 'npm i bcryptjs' for hashing user passwords.
 34. Seeding sample data.-> npm i colors -> create file in backend folder -> seeder.js and write down code.
-35. in package.json -> under scripts -> "data:import": "node backend/seeder.js" ,  
-    "data:destroy": "node backend/seeder.js -d" and run command 'npm run data:import' in root for importing data schema.
+35. In package.json -> under scripts -> "data:import": "node backend/seeder.js" ,  
+    "data:destroy": "node backend/seeder.js -d" and run command 'npm run data:import' in root for importing data schema or seeding the data to database.
+36. Postman
+37. Get Products from database. -> Create productRoutes.js in backend->routes->productRoutes.js. Lec 24 - Watch again
+38. Using express router for handling backend API's.
+39. We are using async await in backend API's because the mongoose methods or model methods are asynchronous and we are fetching the data from database.
+40. Create 'middleware' folder in backend ->create asyncHandler.js - Lec 24 - Watch Again
+41. Create 'errorMiddleware.js' in 'middleware' folder - Lec 25 - Watch again
+42. Product Controller. In backend -> Folder 'controllers' -> productControllers.js
+
+Section 4 - Redux
+
+43. Redux and State Overview
+44. In frontend -> npm i @reduxjs/toolkit react-redux
+45. Create store.js in frontend-> src folder. It will be our redux store
+46. In index.js import (import { Provider } from "react-redux";) and (import store from "../store";) and encapsulate RouterProvider as below
+<!-- <Provider store={store}>
+      <RouterProvider router={router} />
+      {/* <App/> */}
+</Provider> -->
+
+47. Create constants.js in frontend-> src folder.
+48. Create folder slices -> apiSlice.js in frontend-> src folder.
+49. Create productsApiSlice.js in slices folder and update the HomeScreen.jsx, ProductScreen.jsx code
